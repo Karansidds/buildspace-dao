@@ -1,0 +1,29 @@
+- ethers.getDefaultProvider() connects you to a node on the ethereum network. Use it when you want to interact directly with the blockchain.
+
+ - new ethers.providers.EtherscanProvider() connects you to the Etherscan blockchain web service API. Use it if you only want data from the Etherscan web service API.
+
+ -  Minting an ERC721 costs 96,073 gas. Minting an ERC1155 costs 51,935 gas. Why? Because everyone is sharing the same NFT data. We don't have to copy new data for each user.
+
+ - A Signer in ethers is an abstraction of an Ethereum Account (Wallet).
+ 
+ - The Naruto DAO token is minted for a user to become a part of our DAO. That NFT just shows that a user is a part of our DAO.
+
+ - A governance token is a token that is granted to the users of a DAO based on a custom formula. It allows the users to vote for proposals.
+
+ - Why would we want 18 decimal places? 
+    Well, it allows our token to be sent very precisely by users. For example, what if I wanted to send 0.00000001 of my token to a friend? In this case, I could! I have 18 decimal places worth of precision. Basically — we can send really small amounts of tokens with no problem.
+
+ Collection Address: 0x6B690EF977A7EccA1Fc1076475FBE746be80e53b
+ Collection Metadata:  {
+  metadata: {
+    name: 'NarutoDAO Membership',
+    description: 'A collection of NFTs for Naruto DAO',
+    image: 'https://cloudflare-ipfs.com/ipfs/bafkreigv5alae5se6f7kpk4ja4totpvgo6aojfx5km7iftagt2vscrrqeq',
+    primary_sale_recipient_address: '0x0000000000000000000000000000000000000000',
+    uri: 'ipfs://bafkreifcrok33onndk3n3zuhgjo4uxc4kybdajabsqx7dunl7mdthuqxom'
+  },
+  address: '0x6B690EF977A7EccA1Fc1076475FBE746be80e53b',
+  type: 11
+}
+
+Voting Module Contract: 0x27212E1F56AB31B3899576A8C10b3d0091785BC3
